@@ -35,11 +35,11 @@ login_button = WebDriverWait(driver,5).until(lambda driver : driver.find_element
 
 username.clear()
 #type twitter username here
-username.send_keys("test05dummymail@gmail.com")
+username.send_keys("")
 
 password.clear()
 #type twitter password here
-password.send_keys("dummy05Test")
+password.send_keys("")
 login_button.click()
 
 assert "Icon Icon--bird bird-topbar-etched" in driver.page_source
